@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.sp.main&apos; to &apos;Autowiring_using_XML/src&apos;&#x0D;&#x0A;- Original project: &apos;DI_IN_Spring_setterMethods&apos;&#x0D;&#x0A;- Destination element: &apos;Autowiring_using_XML/src&apos;&#x0D;&#x0A;- Original element: &apos;DI_IN_Spring_setterMethods/src/in.sp.main&apos;" description="Copy package" destination="=Autowiring_using_XML/src" element1="/src&lt;in.sp.main" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1720533461963" version="1.0"/>
+</session>

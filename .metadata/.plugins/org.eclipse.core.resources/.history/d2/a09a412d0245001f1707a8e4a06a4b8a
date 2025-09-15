@@ -1,0 +1,32 @@
+package in.sp.resources;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import in.sp.beans.Address;
+import in.sp.beans.Student;
+
+
+@Configuration
+public class JavaConfigFile {
+	
+	@Bean
+	public Address createObj() {
+		Address addr = new Address();
+		addr.setHouseno(753);
+		addr.setCity("Mumbai");
+		addr.setPincode(789456);
+		
+		return addr;
+	}
+	
+	@Bean
+	public Student createStude() {
+		Student s = new Student();
+		s.setRoll(11);
+		s.setName("Ram");
+		s.setAddress(addr);
+		return s;
+	}
+}

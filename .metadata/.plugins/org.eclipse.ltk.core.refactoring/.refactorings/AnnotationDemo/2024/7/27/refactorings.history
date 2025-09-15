@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.sp.resources&apos; to &apos;PropertyConfigurationAnnotation/src&apos;&#x0D;&#x0A;- Original project: &apos;AnnotationDemo&apos;&#x0D;&#x0A;- Destination element: &apos;PropertyConfigurationAnnotation/src&apos;&#x0D;&#x0A;- Original element: &apos;AnnotationDemo/src/in.sp.resources&apos;" description="Copy package" destination="=PropertyConfigurationAnnotation/src" element1="/src&lt;in.sp.resources" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1720115765786" version="1.0"/>
+</session>

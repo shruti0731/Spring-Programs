@@ -1,0 +1,47 @@
+package in.sp.resources;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import in.sp.beans.Address;
+import in.sp.beans.Student;
+import in.sp.beans.Subjects;
+
+
+@Configuration
+public class JavaConfigFile {
+	
+	@Bean
+	public Address createObj() {
+		Address addr = new Address();
+		addr.setHouseno(753);
+		addr.setCity("Mumbai");
+		addr.setPincode(789456);
+		
+		return addr;
+	}
+	
+	@Bean
+	public Student createStude() {
+		Student s = new Student();
+		s.setRoll(11);
+		s.setName("Ram");
+		//s.setAddress(createObj());	//manual DI
+		return s;
+	}
+	
+	@Bean
+	public Subjects createSub() {
+		Subjects sub = new Subjects();
+		List<String> sl = new ArrayList<String>();
+		sl.add("java");
+		sl.add("c++");
+		sl.add("css");
+		sub.setSubjects(null);
+		return sub;
+	}
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean class="in.sp.beans.Address" id="address1">
+		<property name="houseno" value="4560"></property>
+		<property name="city" value="Dwarka"></property>
+		<property name="pincode" value="754196"></property>
+	</bean>
+	
+	<!--<bean class="in.sp.beans.Address" id="address">
+		<property name="houseno" value="8456"></property>
+		<property name="city" value="Pune"></property>
+		<property name="pincode" value="951753"></property>
+	</bean>-->
+	
+	<!--Here for the "byType" mode, if we provide multiple beans of address class, it will 
+	create ambiguity and generate error coz we are considering the datatype of class.
+	
+	Here it is expecting 1 bean but we are providing 2!. -->
+	
+<!--To resolve above problem we've used autowire-candidate="false". This will not invoke the
+	below bean.-->
+	
+	<bean class="in.sp.beans.Address" id="address" autowire-candidate="false">
+		<property name="houseno" value="8456"></property>
+		<property name="city" value="Pune"></property>
+		<property name="pincode" value="951753"></property>
+	</bean>
+	
+	<bean class="in.sp.beans.Student" id="std" autowire="byType">
+		<property name="name" value="Radha"></property>
+		<property name="roll" value="11"></property>
+		
+	</bean>
+
+</beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- 
+		We can provide multiple names to a single bean.
+		We can use ,;or space to seperate those names.
+		We can give same name to a bean as multiple times.
+		But 2 beans cannot have same name.
+		We can provide only single id to each bean. and hence name
+		is more flexible than id attribute.
+	 -->
+   	<bean class="in.sp.beans.Student" id="stdobj2">
+		<property name="name" value="Shruti"/>
+		<property name="roll" value="111"/>
+	</bean>
+	
+	<bean class="in.sp.beans.Student" name="stdobj1, stdobj1">
+		<property name="name" value="Anushree"/>
+		<property name="roll" value="112"/>
+	</bean>
+
+</beans>

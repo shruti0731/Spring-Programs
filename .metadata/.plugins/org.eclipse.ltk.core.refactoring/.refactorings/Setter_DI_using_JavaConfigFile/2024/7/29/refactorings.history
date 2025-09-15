@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;AnnotationDemo/src/in.sp.beans&apos;&#x0D;&#x0A;- Original project: &apos;Setter_DI_using_JavaConfigFile&apos;&#x0D;&#x0A;- Destination element: &apos;AnnotationDemo/src/in.sp.beans&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     in.sp.beans.Address.java&#x0D;&#x0A;     in.sp.beans.Student.java" description="Copy compilation units" destination="=AnnotationDemo/src&lt;in.sp.beans" element1="/src&lt;in.sp.beans{Address.java" element2="/src&lt;in.sp.beans{Student.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1721135767598" units="2" version="1.0"/>
+</session>

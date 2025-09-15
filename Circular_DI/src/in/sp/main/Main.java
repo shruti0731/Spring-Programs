@@ -1,0 +1,21 @@
+package in.sp.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.sp.beans.Address;
+import in.sp.beans.Student;
+import in.sp.beans.Teacher;
+
+public class Main {
+	public static void main(String args[]) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("/in/sp/resources/applicationContext.xml");
+		Student s = (Student) context.getBean("std");
+		s.SDisplay();
+		System.out.println("-------------------------------");
+		
+		Teacher t = (Teacher) context.getBean("tech");
+		t.TDisplay();
+	}
+}
